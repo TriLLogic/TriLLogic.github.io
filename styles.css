@@ -15,13 +15,13 @@ h1{
 }
 
 a:link, a:visited{
-    color: #cc2f2f;
+    color: #0000EE;
 }
 
 a:hover{
-    color: #e61c1c;
+    color: #2222FF;
 }
 
 a:active{
-    color: #ff0000;
+    color: #FF8A8A;
 }
