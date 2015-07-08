@@ -4,6 +4,15 @@
         <title>TriLLogic</title>
         <link rel="icon" type="image/png" href="/resources/trillogLogo.png" />
         <link rel="stylesheet" href="../styles.css">
+        <style type="text/css">
+            /* animated spoiler CSS by Bloggersentral.com */
+            .spoilerbutton {display:block;margin:5px 0;}
+            .spoiler {overflow:hidden;background: #f5f5f5;}
+            .spoiler > div {-webkit-transition: all 0.2s ease;-moz-transition: margin 0.2s ease;-o-transition: all 0.2s ease;transition: margin 0.2s ease;}
+            .spoilerbutton[value="Show"] + .spoiler > div {margin-top:-100%;}
+            .spoilerbutton[value="Hide"] + .spoiler {padding:5px;} 
+        </style> 
+
     </head>
     <body>
         <h1>A Trio of Four</h1>
@@ -12,6 +21,12 @@
             <li><h4>Jack Lawrence, Head Coder</h4></li>
             <li><h4>Alex Little, Head Graphics Designer</h4></li>
             <li><h4>Michael Ryan, Head Websiter</h4></li>
-        </ul>    
+        </ul>
+        <input class="spoilerbutton" type="button" value="Show" onclick="this.value=this.value=='Show'?'Hide':'Show';">
+        <div class="spoiler">
+            <div>
+                PUT CONTENT YOU WISH TO HIDE HERE
+            </div>
+        </div>
     </body>
 </html>
