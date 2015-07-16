@@ -29,3 +29,4 @@ function checkCookie() {
        }
     }
 }
+document.querySelector('.results').innerHTML = getCookie("username");
