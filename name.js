@@ -31,8 +31,8 @@ function checkCookie() {
 }
 var n = getCookie("username")
 if (n != ""){
-    document.getElementById('results').innerHTML = n;
+    document.getElementById('results').innerHTML = "Welcome, " + n;
 } else {
-    document.getElementById('results').innerHTML = " to our site!";
+    document.getElementById('results').innerHTML = "Welcome to our site!";
 }
 //document.getElementById("output").innerHTML=name;
