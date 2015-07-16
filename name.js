@@ -29,5 +29,6 @@ function checkCookie() {
        }
     }
 }
-document.getElementById('results').innerHTML = getCookie("username");
+var n = getCookie("username")
+document.getElementById('.results').innerHTML = n;
 //document.getElementById("output").innerHTML=name;
