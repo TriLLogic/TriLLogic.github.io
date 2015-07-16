@@ -32,5 +32,7 @@ function checkCookie() {
 var n = getCookie("username")
 if (n != ""){
     document.getElementById('results').innerHTML = n;
+} else {
+    document.getElementById('results').innerHTML = " to our site!";
 }
 //document.getElementById("output").innerHTML=name;
