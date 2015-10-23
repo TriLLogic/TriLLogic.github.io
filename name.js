@@ -2,6 +2,7 @@ function newCookie(){
     user = prompt("Please enter your name:","");
        if (user != "" && user != null) {
            setCookie("username", user, 30);
+           alert("Name reset. Refresh the page to view.");
        }
 }
 
