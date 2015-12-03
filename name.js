@@ -10,7 +10,11 @@ function setCookie(cname,cvalue,exdays) {
     var d = new Date();
     d.setTime(d.getTime() + (exdays*24*60*60*1000));
     var expires = "expires=" + d.toGMTString();
+    if (cvalue != "Satan"){
     document.cookie = cname+"="+cvalue+"; "+expires;
+    } else {
+        window.location="http://www.churchofsatan.com/";
+    }
 }
 
 function getCookie(cname) {
@@ -28,10 +32,7 @@ function getCookie(cname) {
 
 function checkCookie() {
     var user=getCookie("username");
-    if (user=="Satan"){
-        setCookie("username", "", 30);
-        window.location="http://www.churchofsatan.com/";
-    } else if (user != "") {
+    if (user != "") {
         var a = 1;
     } else {
        user = prompt("Please enter your name:","");
