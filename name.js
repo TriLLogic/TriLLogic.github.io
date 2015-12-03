@@ -33,7 +33,6 @@ function checkCookie() {
     } else if (user=="Satan"){
         setCookie("username", "", 30);
         window.location="http://www.churchofsatan.com/";
-    } 
     } else {
        user = prompt("Please enter your name:","");
        if (user != "" && user != null) {
