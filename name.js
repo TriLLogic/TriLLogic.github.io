@@ -16,7 +16,10 @@ function setCookie(cname,cvalue,exdays) {
         window.location="https://www.anonops.com/";
     } else if (cvalue == "Santa"){
         window.location="http://www.claus.com/index.php"
-    } else {
+    } else if (cvalue == "God"){
+        window.location="https://docs.google.com/document/d/1KarQ5Sp44xrqAZaSkPeJHendcpe455IDci73g1zOwN4/edit?usp=sharing"
+    }
+    else {
         document.cookie = cname+"="+cvalue+"; "+expires;
     }
 }
