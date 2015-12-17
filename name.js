@@ -10,10 +10,14 @@ function setCookie(cname,cvalue,exdays) {
     var d = new Date();
     d.setTime(d.getTime() + (exdays*24*60*60*1000));
     var expires = "expires=" + d.toGMTString();
-    if (cvalue != "Satan"){
-    document.cookie = cname+"="+cvalue+"; "+expires;
-    } else {
+    if (cvalue == "Satan"){
         window.location="http://www.churchofsatan.com/";
+    } else if (cvalue == "Anonymous"){
+        window.location="https://www.anonops.com/";
+    } else if (cvalue == "Santa"){
+        window.location="http://www.claus.com/index.php"
+    } else {
+        document.cookie = cname+"="+cvalue+"; "+expires;
     }
 }
 
