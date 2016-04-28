@@ -1,2 +1,2 @@
 # TriLLogic.github.io
-## [MIKES THINGY IGNORE PLS](http://trillogic.github.io)
+Looking for a link to the [site](http://trillogic.github.io)?
